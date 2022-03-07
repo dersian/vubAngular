@@ -1,5 +1,5 @@
 # VubAngular
-Rebuilding the entire website of  [vubracing.com](https://vubracing.be)
+Rebuilding the entire website: [vubracing.com](https://vubracing.be)
 
 Frontend: Angular Material
 
