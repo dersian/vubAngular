@@ -1,0 +1,36 @@
+.slider-container {
+  display: flex;
+  flex-direction: column;
+}
+
+
+.slides {
+  display: flex;
+  overflow-x: scroll;
+  scroll-behavior: smooth;
+
+  &::-webkit-scrollbar { 
+      width: 0px;
+      background: transparent;
+  }
+
+}
+
+.controls {
+  display: flex;
+  justify-content: space-around;
+  transform: translate(0em,-10em);
+ 
+}
+
+
+.button{
+  color: white;
+  transform: translate(0em,-5em);
+  margin-left: 15%;
+}
+  
+.buttons{
+  color: white;
+}
+

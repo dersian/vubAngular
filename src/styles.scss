@@ -1,0 +1,133 @@
+
+// Custom Theming for Angular Material
+// For more information: https://material.angular.io/guide/theming
+@use '@angular/material' as mat;
+// Plus imports for other components in your app.
+
+// Include the common styles for Angular Material. We include this here so that you only
+// have to load a single css file for Angular Material in your app.
+// Be sure that you only ever include this mixin once!
+@include mat.core();
+
+
+
+$vub-blue: (
+    50 : #e0e7f3,
+    100 : #b3c2e0,
+    200 : #8099cc,
+    300 : #4d70b8,
+    400 : #2652a8,
+    500 : #003399,
+    600 : #002e91,
+    700 : #002786,
+    800 : #00207c,
+    900 : #00146b,
+    A100 : #9aa5ff,
+    A200 : #6778ff,
+    A400 : #344aff,
+    A700 : #1a33ff,
+    contrast: (
+        50 : #000000,
+        100 : #000000,
+        200 : #000000,
+        300 : #ffffff,
+        400 : #ffffff,
+        500 : #ffffff,
+        600 : #ffffff,
+        700 : #ffffff,
+        800 : #ffffff,
+        900 : #ffffff,
+        A100 : #000000,
+        A200 : #000000,
+        A400 : #ffffff,
+        A700 : #ffffff,
+    )
+);
+
+$vub-orange: (
+    50 : #ffede0,
+    100 : #ffd1b3,
+    200 : #ffb380,
+    300 : #ff944d,
+    400 : #ff7d26,
+    500 : #ff6600,
+    600 : #ff5e00,
+    700 : #ff5300,
+    800 : #ff4900,
+    900 : #ff3800,
+    A100 : #ffffff,
+    A200 : #fff4f2,
+    A400 : #ffc9bf,
+    A700 : #ffb4a6,
+    contrast: (
+        50 : #000000,
+        100 : #000000,
+        200 : #000000,
+        300 : #000000,
+        400 : #000000,
+        500 : #000000,
+        600 : #000000,
+        700 : #ffffff,
+        800 : #ffffff,
+        900 : #ffffff,
+        A100 : #000000,
+        A200 : #000000,
+        A400 : #000000,
+        A700 : #000000,
+    )
+);
+
+$font-weights: ("regular": 400, "medium": 500, "bold": 700);
+
+
+// Define the palettes for your theme using the Material Design palettes available in palette.scss
+// (imported above). For each palette, you can optionally specify a default, lighter, and darker
+// hue. Available color palettes: https://material.io/design/color/
+$vubAngular-primary: mat.define-palette($vub-blue,500);
+$vubAngular-accent: mat.define-palette($vub-orange);
+
+// The warn palette is optional (defaults to red).
+$vubAngular-warn: mat.define-palette(mat.$red-palette);
+
+// Create the theme object. A theme consists of configurations for individual
+// theming systems such as "color" or "typography".
+$vubAngular-theme: mat.define-light-theme((
+  color: (
+    primary: $vubAngular-primary,
+    accent: $vubAngular-accent,
+    warn: $vubAngular-warn,
+  )
+));
+
+// Include theme styles for core and each component used in your app.
+// Alternatively, you can import and @include the theme mixins for each component
+// that you are using.
+@include mat.all-component-themes($vubAngular-theme);
+
+/* You can add global styles to this file, and also import other style files */
+/* Application-wide Styles */
+h1 {
+  color: white;
+  font-family: Roboto, "Helvetica Neue", sans-serif;
+  font-size: 12pt;
+  font-weight: bold;
+}
+
+h2, h3 {
+  color: rgb(0, 0, 0);
+  font-family: Roboto, "Helvetica Neue", sans-serif;
+  font-weight: bolder;
+}
+body {
+  margin: 2em;
+}
+body, input[type="text"], button {
+  color: #333;
+  font-family: Cambria, Georgia, serif;
+}
+/* everywhere else */
+* {
+  font-family: Arial, Helvetica, sans-serif;
+}
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }

@@ -1,0 +1,23 @@
+.container1{
+ margin-left: 15%;
+ margin-right: 15%;
+
+}
+
+.box1{
+    display: flex;
+    justify-content: center;
+    
+    
+}
+
+
+.image{
+    width: 220px; /* you can use % */
+    height: auto;
+}
+
+.button{
+    color: white;
+    transform: translate(0,-5em);
+}

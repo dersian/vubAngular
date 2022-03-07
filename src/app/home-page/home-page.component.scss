@@ -1,0 +1,52 @@
+.hero-image {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(/assets/images/Wagen_blurred-scaled3.jpg);
+  height: 60%;
+  transform: translate(0%,0%);
+  z-index: -1;
+  min-height: 700px;
+  max-height: 700px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+ 
+}
+
+.hero-text {
+  text-align: right;
+  position: relative;
+  top: 50%;
+  left: -10%;
+  margin-left: 10%;
+  
+}
+
+
+.container{
+    margin-right: 10%;
+    margin-left: 10%;
+    display: flex;
+    justify-content: space-between;
+ 
+    //border: 2px #ccc solid;
+    padding: 20px;
+}
+
+.box{
+    display: flex;
+    justify-content: space-between;
+    
+}
+
+.fill-space {
+ min-width: 8px;
+}
+
+
+
+h2{
+    margin-left: 10%;
+}
+// .box2{
+//     flex: 2;
+// }

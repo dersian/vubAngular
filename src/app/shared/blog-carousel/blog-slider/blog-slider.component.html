@@ -1,0 +1,14 @@
+<div class="slider-container">
+    <div class="slides" #slides>
+        <ng-content select="[appSliderItem]" #sliderItem></ng-content>
+    </div>
+    <div class="controls">
+        <button class="buttons" mat-mini-fab color="accent" (click)="onClickLeft()"> &#60; </button>
+        <p> </p>
+        <p> </p>
+        <button class="buttons" mat-mini-fab color="accent" (click)="onClickRight()"> &#62; </button>
+
+    </div>
+
+</div>
+<button mat-flat-button class="button" color="accent"></button>

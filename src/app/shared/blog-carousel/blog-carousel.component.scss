@@ -1,0 +1,42 @@
+p {
+  font-family:Roboto ;
+ 
+    display: -webkit-box;
+    max-width: 200px;
+    -webkit-line-clamp: 4;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+}
+
+.example-card {
+  max-width: 250px;
+  min-width: 250px;
+
+  max-height: 400px;
+
+}
+
+[appSliderItem] {
+  flex-shrink: 0;
+}
+
+
+.carousel-header{
+display: flex;
+justify-content: flex-start;
+margin-left: 15%;
+
+}
+
+.fill-space {
+ min-width: 8px;
+}
+
+.head{
+  transform: translate(0,19%);
+}
+
+.chow-chow-header-image {
+  background-image: url('https://cdn1-www.dogtime.com/assets/uploads/gallery/chow-chow-dog-breed-pictures/2-laying.jpg');
+  background-size: cover;
+}
