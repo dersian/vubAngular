@@ -103,6 +103,16 @@
             ],
             "scripts": []
           }
+        },
+        "deploy": {
+          "builder": "@angular/fire:deploy",
+          "options": {
+            "prerender": false,
+            "ssr": false,
+            "browserTarget": "vubAngular:build:production",
+            "firebaseProject": "sam-angular-course",
+            "firebaseHostingSite": "sam-angular-course"
+          }
         }
       }
     }

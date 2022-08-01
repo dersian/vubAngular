@@ -1,0 +1,14 @@
+{
+  "targets": {
+    "sam-angular-course": {
+      "hosting": {
+        "vubAngular": [
+          "sam-angular-course"
+        ]
+      }
+    }
+  },
+  "projects": {
+    "default": "sam-angular-course"
+  }
+}

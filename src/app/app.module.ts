@@ -9,7 +9,14 @@ import { HomePageComponent } from './home-page/home-page.component';
 import { TeamsPageComponent } from './teams-page/teams-page.component';
 import { AboutPageComponent } from './about-page/about-page.component';
 
-//MATERIAL
+
+//FB
+import { environment } from '../environments/environment';
+import { AngularFireModule } from '@angular/fire/compat';
+import { AngularFireAuthModule } from '@angular/fire/compat/auth';
+import { AngularFirestore } from '@angular/fire/compat/firestore';
+
+
 
 
 
@@ -18,13 +25,17 @@ import { AboutPageComponent } from './about-page/about-page.component';
     AppComponent,
     HomePageComponent,
     TeamsPageComponent,
-    AboutPageComponent
+    AboutPageComponent,
+
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     BrowserAnimationsModule,
-    SharedModule
+    SharedModule,
+    AngularFireModule.initializeApp(environment.firebase),
+    AngularFireAuthModule,
+
   ],
   providers: [],
   bootstrap: [AppComponent]
